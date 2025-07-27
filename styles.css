@@ -1,0 +1,64 @@
+:root {
+    --bs-primary: #4f46e5; 
+    --bs-primary-rgb: 79, 70, 229;
+    --bs-primary-hover: #4338ca; 
+    --bs-secondary: #6b7280; 
+    --bs-secondary-rgb: 107, 114, 128;
+    --bs-success: #10b981; 
+    --bs-success-rgb: 16, 185, 129;
+    --bs-danger: #ef4444; 
+    --bs-danger-rgb: 239, 68, 68;
+    --bs-light: #f3f4f6; 
+    --bs-light-rgb: 243, 244, 246;
+}
+
+.fade-in {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.chart-container {
+    position: relative;
+    height: 250px;
+    width: 100%;
+}
+
+.category-color {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 6px;
+}
+
+
+.btn-primary {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: var(--bs-primary-hover);
+    border-color: var(--bs-primary-hover);
+}
+
+
+body {
+    background-color: var(--bs-light);
+}
+
+.text-primary {
+    color: var(--bs-primary) !important;
+}
+
+.text-success {
+    color: var(--bs-success) !important;
+}
+
+.text-danger {
+    color: var(--bs-danger) !important;
+}
